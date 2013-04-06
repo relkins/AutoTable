@@ -93,7 +93,7 @@ namespace AutoTable
                 string query = string.Format(@"
                     IF NOT EXISTS (SELECT * FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = @Schema AND [TABLE_NAME] = @Table)
                     BEGIN
-	                    CREATE TABLE [{0}].[{1}]
+                        CREATE TABLE [{0}].[{1}]
                         ( 
                             [Id] INT IDENTITY(1, 1) NOT NULL,
                             [Key] NVARCHAR(200) NOT NULL, 
